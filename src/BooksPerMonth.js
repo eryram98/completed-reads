@@ -18,7 +18,7 @@ function BooksPerMonth() {
 
     return  (
       <div>
-        <h1>You averaged {data} books per month!</h1>
+        <h1>You averaged {data} books per month.</h1>
       </div>
     );
 }

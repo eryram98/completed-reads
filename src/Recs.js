@@ -3,7 +3,8 @@ function Recs() {
 
     return  (
       <div>
-        <h1>Recommendations from this year:</h1>
+        <h1>Books you can't stop recommending:</h1>
+        <h3>(Surprisingly, not romance fiction).</h3>
       </div>
     );
 }
