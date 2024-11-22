@@ -21,7 +21,7 @@ function App() {
     return  (
         <div className="center">
             <Container>
-                <Carousel activeIndex={index} onSelect={handleSelect} data-bs-theme="dark" indicators={false}interval={8000}>
+                <Carousel activeIndex={index} onSelect={handleSelect} data-bs-theme="dark" indicators={false} interval={8000}>
                     <Carousel.Item>
                         <Intro />
                     </Carousel.Item>

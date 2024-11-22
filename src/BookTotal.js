@@ -18,7 +18,7 @@ function BookTotal() {
 
     return  (
       <div>
-        <h1>You read a total of {data} books this year.</h1>
+        <h1>You read a total of {data} books.</h1>
       </div>
     );
 }

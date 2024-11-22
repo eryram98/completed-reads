@@ -29,9 +29,9 @@ function TopGenre() {
 
     return  (
       <div>
-        <h1>{genreData.genre} was your genre of choice this year.</h1>
+        <h1>{genreData.genre} was your genre of choice.</h1>
         <h3>{genreData.count} out of the {total} you read were {genreData.genre}.</h3>
-        <h5>(You love, love.)</h5>
+        <h5>And yet you're still single.</h5>
       </div>
     );
 }

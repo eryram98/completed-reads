@@ -27,7 +27,7 @@ function ReadTime() {
 
     return  (
       <div>
-        <h1>You spent {data.data} hours reading this year.</h1>
+        <h1>You spent {data.data} hours reading.</h1>
         <h3>That's {wknd} out of the 52 weekends.</h3>
         <h5>You've spent more time with fictional characters than real people.</h5>
       </div>

@@ -19,6 +19,7 @@ function BooksPerMonth() {
     return  (
       <div>
         <h1>On average, you read {data} books per month.</h1>
+        <h3>A bookworm in training.</h3>
       </div>
     );
 }
