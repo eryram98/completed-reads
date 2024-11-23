@@ -1,7 +1,8 @@
-//import React from "react";
+import React from "react";
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
+//import Slider from "react-slick";
 import Intro from "./Intro";
 import BookTotal from "./BookTotal";
 import ReadTime from "./ReadTime";
@@ -16,12 +17,13 @@ function App() {
 
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex)
-    }
+    };
 
     return  (
         <div className="center">
             <Container>
-                <Carousel activeIndex={index} onSelect={handleSelect} data-bs-theme="dark" indicators={false} interval={8000}>
+                <Carousel activeIndex={index} onSelect={handleSelect} data-bs-theme="dark" indicators={false}
+                    interval={8000} wrap={false}>
                     <Carousel.Item>
                         <Intro />
                     </Carousel.Item>
