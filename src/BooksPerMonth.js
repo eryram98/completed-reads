@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Styles.css";
 
 function BooksPerMonth() {
     const [data, setData] = useState([]);
@@ -18,8 +19,12 @@ function BooksPerMonth() {
 
     return  (
       <div>
-        <h1>On average, you read {data} books per month.</h1>
-        <h3>A bookworm in training.</h3>
+        <div className='text'>
+            <h1>On average, you read {Number(data).toFixed(2)} books per month.</h1>
+        </div>
+        <div className='caption'>
+            <h3>A bookworm in training.</h3>
+        </div>
       </div>
     );
 }

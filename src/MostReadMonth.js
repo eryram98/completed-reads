@@ -29,8 +29,12 @@ function MostReadMonth() {
 
     return  (
       <div>
-        <h1>{months[0]}, {months[1]}, and {months[2]} were your most read months.</h1>
-        <h3>You completed {count} books in each of those months.</h3>
+        <div className='text'>
+            <h1>{months[0]}, {months[1]}, and {months[2]} were your most read months.</h1>
+        </div>
+        <div className='caption'>
+            <h3>You completed {count} books in each of those months.</h3>
+        </div>
       </div>
     );
 }
