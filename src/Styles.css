@@ -10,13 +10,48 @@
     animation-name: slide-up;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-direction: alternate;
 }
 
 .captionToo {
     visibility: hidden;
     animation-delay: 4s;
     animation-name: slide-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+.cover {
+    height: auto;
+    width: 100%;
+/*    visibility: hidden;
+    animation-delay: 2s;
+    animation-name: slide-up-books;
     animation-duration: 2s;
+    animation-fill-mode: forwards;*/
+}
+
+.book1 {
+    visibility: hidden;
+    animation-delay: 2s;
+    animation-name: slide-up-books;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.book2 {
+    visibility: hidden;
+    animation-delay: 2.25s;
+    animation-name: slide-up-books;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.book3 {
+    visibility: hidden;
+    animation-delay: 2.5s;
+    animation-name: slide-up-books;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
 }
 
@@ -42,15 +77,20 @@
 
 @keyframes slide-up {
     from {
-/*        margin-top: 100%;
-        height: 300%;
-        visibility: visible; */
         transform: translateY(100px);
     }
     to {
         transform: translateY(0);
-/*        margin-top: 0%;
-        height: 100%; */
+        visibility: visible;
+    }
+}
+
+@keyframes slide-up-books {
+    from {
+        transform: translateY(400px);
+    }
+    to {
+        transform: translateY(0);
         visibility: visible;
     }
 }

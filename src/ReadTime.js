@@ -32,7 +32,7 @@ function ReadTime() {
     return  (
       <div>
         <div className='text'>
-            <h1>You spent {hrs} hours and {min} minutes reading.</h1>
+            <h1>{hrs} hours and {min} minutes were spent reading.</h1>
         </div>
         <div className='caption'>
             <h3>That's {wknd} out of the 52 weekends.</h3>
