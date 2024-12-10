@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,14 +37,22 @@
   }
 }
 
-.center{
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f1559b;
+    background-color: #d4e09b;
 }
-
+*/
+#root {
+    padding: 0;
+}
 span.carousel-control-next-icon, span.carousel-control-prev-icon {
     display: none;
+    padding: 0;
 }
+
+/*.container {
+    background-color: #f19c79;
+} */

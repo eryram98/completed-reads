@@ -16,9 +16,19 @@ function BooksPerMonth() {
           });
     }, []);
 
+    const slide = {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        height: '100vh',
+        paddingLeft: '2em',
+        paddingRight: '2em',
+        backgroundColor: '#d4e09b',
+    };
 
     return  (
-      <div>
+      <div style={slide}>
         <div className='text'>
             <h1>On average, you read {Number(data).toFixed(2)} books per month.</h1>
         </div>

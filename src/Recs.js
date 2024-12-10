@@ -4,13 +4,24 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
 function Recs() {
+    const slide = {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        height: '100vh',
+        paddingLeft: '2em',
+        paddingRight: '2em',
+        backgroundColor: '#f6f4d2',
+    };
+
 
     return  (
-      <div>
+      <div style={slide}>
         <div className='text'>
             <h1>Books you can't stop recommending:</h1>
         </div>
-        <Container fluid>
+        <Container>
             <Row>
                 <Col className='book1'>
                     <Image className='cover' src={require("./images/the_husbands.jpg")} />

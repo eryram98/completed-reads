@@ -29,8 +29,19 @@ function ReadTime() {
           });
     });
 
+    const slide = {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        height: '100vh',
+        paddingLeft: '2em',
+        paddingRight: '2em',
+        backgroundColor: '#cbdfbd',
+    };
+
     return  (
-      <div>
+      <div style={slide}>
         <div className='text'>
             <h1>{hrs} hours and {min} minutes were spent reading.</h1>
         </div>

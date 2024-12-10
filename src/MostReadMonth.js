@@ -26,9 +26,20 @@ function MostReadMonth() {
           });
     }, []);
 
+    const slide = {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        height: '100vh',
+        paddingLeft: '2em',
+        paddingRight: '2em',
+        backgroundColor: '#a44a3f',
+    };
+
 
     return  (
-      <div>
+      <div style={slide}>
         <div className='text'>
             <h1>{months[0]}, {months[1]}, and {months[2]} were your most read months.</h1>
         </div>

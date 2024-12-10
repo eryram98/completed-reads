@@ -26,9 +26,19 @@ function TopGenre() {
           });
     }, []);
 
+    const slide = {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        height: '100vh',
+        paddingLeft: '2em',
+        paddingRight: '2em',
+        backgroundColor: '#f19c79',
+    };
 
     return  (
-      <div>
+      <div style={slide}>
         <div className='text'>
             <h1>{genreData.genre} was your genre of choice.</h1>
         </div>
