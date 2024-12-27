@@ -37,7 +37,12 @@ function ReadTime() {
         height: '100vh',
         paddingLeft: '2em',
         paddingRight: '2em',
-        backgroundColor: '#cbdfbd',
+//        backgroundColor: '#cbdfbd',
+        backgroundImage: 'url(/four_corners.gif)',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        minHeight: '100vh',
     };
 
     return  (

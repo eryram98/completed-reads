@@ -24,7 +24,12 @@ function BooksPerMonth() {
         height: '100vh',
         paddingLeft: '2em',
         paddingRight: '2em',
-        backgroundColor: '#d4e09b',
+//        backgroundColor: '#d4e09b',
+        backgroundImage: 'url(/wavy_corners.gif)',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        minHeight: '100vh',
     };
 
     return  (

@@ -34,7 +34,12 @@ function MostReadMonth() {
         height: '100vh',
         paddingLeft: '2em',
         paddingRight: '2em',
-        backgroundColor: '#a44a3f',
+//        backgroundColor: '#a44a3f',
+        backgroundImage: 'url(/stripes.gif)',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        minHeight: '100vh',
     };
 
 

@@ -26,7 +26,12 @@ function BookTotal() {
         height: '100vh',
         paddingLeft: '2em',
         paddingRight: '2em',
-        backgroundColor: '#f6f4d2',
+//        backgroundColor: '#f6f4d2',
+        backgroundImage: 'url(/stars.gif)',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        minHeight: '100vh',
     };
 
 
