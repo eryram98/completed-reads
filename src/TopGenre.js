@@ -26,12 +26,33 @@ function TopGenre() {
           });
     }, []);
 
+    const slide = {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        height: '100vh',
+        paddingLeft: '2em',
+        paddingRight: '2em',
+//        backgroundColor: '#f19c79',
+        backgroundImage: 'url(/hearts.gif)',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        minHeight: '100vh',
+    };
 
     return  (
-      <div>
-        <h1>{genreData.genre} was your genre of choice this year.</h1>
-        <h3>{genreData.count} out of the {total} you read were {genreData.genre}.</h3>
-        <h5>(You love, love.)</h5>
+      <div style={slide}>
+        <div className='text'>
+            <h1>{genreData.genre} was your genre of choice.</h1>
+        </div>
+        <div className='caption'>
+            <h3>{genreData.count} out of the {total} books you read were {genreData.genre}.</h3>
+        </div>
+        <div className='captionToo'>
+            <h5>And yet you're still single.</h5>
+        </div>
       </div>
     );
 }

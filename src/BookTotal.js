@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+//import ReactTextTransition, { presets } from "react-text-transition";
+//import Fade from "react-bootstrap/Fade";
+import "./Styles.css";
 
 function BookTotal() {
     const [data, setData] = useState([]);
@@ -15,10 +18,28 @@ function BookTotal() {
           });
     }, []);
 
+    const slide = {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        height: '100vh',
+        paddingLeft: '2em',
+        paddingRight: '2em',
+//        backgroundColor: '#f6f4d2',
+        backgroundImage: 'url(/stars.gif)',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        minHeight: '100vh',
+    };
+
 
     return  (
-      <div>
-        <h1>You read a total of {data} books this year.</h1>
+      <div style={slide}>
+          <div className='text'>
+            <h1>You read a total of {data} books.</h1>
+          </div>
       </div>
     );
 }

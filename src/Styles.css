@@ -1,0 +1,124 @@
+div {
+    color: #a44a3f;
+    font-family: 'monaco', monospace;
+}
+
+button.replay {
+    color: #a44a3f;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    visibility: hidden;
+    animation-delay: 6s;
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+button.replay:hover,
+button.replay:active,
+button.replay:visited,
+button.replay:focus{
+    color: #a44a3f !important;
+    background: transparent !important;
+}
+
+button.replay:active {
+    color: #a44a3f;
+    background: transparent;
+}
+
+.text {
+    animation-name: slide-right;
+    animation-duration: 2s;
+    animation-fill-mode: none;
+}
+
+.caption {
+    visibility: hidden;
+    animation-delay: 2s;
+    animation-name: slide-up;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+.captionToo {
+    visibility: hidden;
+    animation-delay: 4s;
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+.cover {
+    height: auto;
+    max-height: 250px;
+    max-width: 100%;
+}
+
+.book1 {
+    visibility: hidden;
+    animation-delay: 2s;
+    animation-name: slide-up-books;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.book2 {
+    visibility: hidden;
+    animation-delay: 2.25s;
+    animation-name: slide-up-books;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.book3 {
+    visibility: hidden;
+    animation-delay: 2.5s;
+    animation-name: slide-up-books;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: -100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@keyframes slide-up-books {
+    from {
+        transform: translateY(400px);
+    }
+    to {
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
