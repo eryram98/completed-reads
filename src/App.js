@@ -21,7 +21,7 @@ function App() {
 
     return  (
         <Carousel className='p-0' activeIndex={index} onSelect={handleSelect} data-bs-theme="dark" indicators={false}
-            interval={8000} slide={false}/* wrap={false}*/>
+            interval={8000} slide={false} wrap={false}>
             <Carousel.Item className='p-0'>
                 <Intro />
             </Carousel.Item>

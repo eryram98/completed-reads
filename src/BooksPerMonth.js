@@ -25,7 +25,7 @@ function BooksPerMonth() {
         paddingLeft: '2em',
         paddingRight: '2em',
 //        backgroundColor: '#d4e09b',
-        backgroundImage: 'url(/wavy_corners.gif)',
+        backgroundImage: 'url(/stripes.gif)',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

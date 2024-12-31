@@ -3,6 +3,33 @@ div {
     font-family: 'monaco', monospace;
 }
 
+button.replay {
+    color: #a44a3f;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    visibility: hidden;
+    animation-delay: 6s;
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+button.replay:hover,
+button.replay:active,
+button.replay:visited,
+button.replay:focus{
+    color: #a44a3f !important;
+    background: transparent !important;
+}
+
+button.replay:active {
+    color: #a44a3f;
+    background: transparent;
+}
+
 .text {
     animation-name: slide-right;
     animation-duration: 2s;

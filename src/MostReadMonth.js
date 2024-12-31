@@ -35,7 +35,7 @@ function MostReadMonth() {
         paddingLeft: '2em',
         paddingRight: '2em',
 //        backgroundColor: '#a44a3f',
-        backgroundImage: 'url(/stripes.gif)',
+        backgroundImage: 'url(/wavy_corners.gif)',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
